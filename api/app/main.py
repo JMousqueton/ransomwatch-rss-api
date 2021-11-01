@@ -12,7 +12,7 @@ from fastapi_rss import (
 )
 from pydantic import BaseModel
 
-from ..db.models import Site, Victim
+from db.models import Site, Victim
 
 def make_session():
     path = f"sqlite:///{os.getenv('RW_DB_PATH', ':memory:')}"
