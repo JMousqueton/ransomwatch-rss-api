@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  api:
+    build: ./api/
+    ports: 
+      - "8080:80/tcp"
+    volumes:
+      - ../ransomwatch/db_vol:/db
+    environment:
+      RW_DB_PATH: /db/ransomwatch.db
+
