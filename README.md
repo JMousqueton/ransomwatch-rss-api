@@ -19,11 +19,11 @@ Please note that this piece of code does not gather any data from any platform, 
 │   └── docker-compose.yml
 ```
 2. get into the ransomwatch-rss-api directory
-1. run the docker-compose build command
+1. run the `docker-compose build` command
 
 ## Usage
 
-Once the build has completed you can start the API by running `docker-compose up`.
+Once the build has completed you can start the API by running `docker-compose up`. It will listen on port 8080 as specified in the docker-compose.yml configuration file.
 
 If you have entries in the ransomwatch.db sqlite database, you can already configure your RSS software to reach `http://localhost/rss` and enjoy the results.
 
