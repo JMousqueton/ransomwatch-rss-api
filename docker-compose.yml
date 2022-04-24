@@ -4,7 +4,7 @@ services:
   api:
     build: ./api/
     ports: 
-      - "8080:80/tcp"
+      - "127.0.0.1:8080:80/tcp"
     volumes:
       - ../ransomwatch/db_vol:/db
     environment:
