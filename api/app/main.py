@@ -84,8 +84,8 @@ async def root(template: Optional[RssMode] = RssMode.REGULAR, hide_removed: Opti
 
     feed_data = {
         'title': 'Ransonwatch RSS feed',
-        'link': 'https://127.0.0.1',
-        'description': 'I expose an RSS feed with content of database',
+        'link': 'https://github.com/JMousqueton/ransomwatch-rss-api',
+        'description': 'Expose an RSS feed from the Ransomwatch bot database',
         'language': 'en-us',
         'ttl': 40,
         'item': items
